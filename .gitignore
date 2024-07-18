@@ -1,5 +1,12 @@
 .idea
 .next
+.tscache
+.eslint/cache
 coverage
+es6
+lib
 node_modules
 npm-debug*
+out
+types
+lerna-debug.log

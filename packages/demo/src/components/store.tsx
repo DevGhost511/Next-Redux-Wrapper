@@ -1,8 +1,8 @@
-import {createStore} from "redux";
-import reducer from "./reducer";
+import {createStore} from 'redux';
+import {MakeStore} from 'next-redux-wrapper';
+import reducer, {State} from './reducer';
 
-export const makeStore = (initialState) => {
-
+export const makeStore: MakeStore = (initialState: State) => {
     const store = createStore(reducer, initialState);
 
     if (module.hot) {
@@ -13,6 +13,4 @@ export const makeStore = (initialState) => {
     }
 
     return store;
-
 };
-
