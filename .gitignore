@@ -1,5 +1,7 @@
 .idea
 .next
 coverage
+lib
 node_modules
 npm-debug*
+out

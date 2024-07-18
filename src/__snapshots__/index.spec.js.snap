@@ -2,48 +2,20 @@
 
 exports[`async store integration 1`] = `
 <div>
-  <div
-    className="redux"
-  >
-    foo
-  </div>
-  <div
-    className="custom"
-  >
-    custom
-  </div>
+  {"isServer":true,"custom":"custom"}
+  {"reduxStatus":"foo"}
 </div>
 `;
 
-exports[`createStore advanced props 1`] = `
+exports[`custom serialization custom state serialization on the server and deserialization on the client 1`] = `
 <div>
-  foo
-</div>
-`;
-
-exports[`createStore debug mode from options 1`] = `<div />`;
-
-exports[`createStore debug mode with setDebug method 1`] = `<div />`;
-
-exports[`createStore should be able to configure store key on window 1`] = `<div />`;
-
-exports[`createStore simple props 1`] = `
-<div>
-  foo
+  {"deserialized":true,"serialized":true}
 </div>
 `;
 
 exports[`simple store integration 1`] = `
 <div>
-  <div
-    className="redux"
-  >
-    foo
-  </div>
-  <div
-    className="custom"
-  >
-    custom
-  </div>
+  {"isServer":true,"custom":"custom"}
+  {"reduxStatus":"foo"}
 </div>
 `;
